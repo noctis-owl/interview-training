@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-HK">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>面試表達訓練手册｜15課重點 + 中心情境例子 + 練習</title>
+<style>
+:root{--ink:#12283a;--ink2:#4a6377;--paper:#f6f3ed;--card:#fff;--line:#ddd6c7;
+--gold:#a8790c;--gold2:#c9971a;--teal:#0c6f6a;--rose:#a8414d;--violet:#57478a;
+--shadow:0 2px 9px rgba(18,40,58,.07)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+font-family:"Noto Sans TC","PingFang HK","Microsoft JhengHei",-apple-system,sans-serif;
+line-height:1.68;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px 90px}
+
+header{background:linear-gradient(155deg,#12283a,#22485c 55%,#2f5f6d);color:#f6f3ed;
+padding:42px 20px 34px;text-align:center;position:relative;overflow:hidden}
+header::after{content:"";position:absolute;inset:0;
+background:radial-gradient(circle at 14% 18%,rgba(201,151,26,.20),transparent 45%),
+radial-gradient(circle at 86% 78%,rgba(12,111,106,.22),transparent 42%);pointer-events:none}
+header>*{position:relative;z-index:1}
+header h1{margin:0 0 8px;font-size:clamp(1.35rem,3.6vw,2.1rem);font-weight:800}
+header .sub{color:#c8d5df;max-width:800px;margin:0 auto 14px;font-size:.93rem}
+.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.chip{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.2);
+padding:5px 13px;border-radius:99px;font-size:.78rem}
+.chip b{color:var(--gold2)}
+
+nav{position:sticky;top:0;z-index:40;background:rgba(246,243,237,.96);
+backdrop-filter:blur(9px);border-bottom:1px solid var(--line)}
+nav .in{max-width:1140px;margin:0 auto;padding:9px 20px;display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+nav .in::-webkit-scrollbar{display:none}
+nav a{white-space:nowrap;font-size:.79rem;color:var(--ink2);text-decoration:none;padding:6px 11px;border-radius:7px}
+nav a:hover,nav a.on{background:var(--ink);color:#f6f3ed}
+
+section{padding-top:42px}
+h2{font-size:clamp(1.08rem,2.6vw,1.4rem);margin:0 0 6px;font-weight:800;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+h2 .n{background:var(--ink);color:var(--gold2);font-size:.72rem;font-weight:800;min-width:26px;height:26px;
+display:inline-flex;align-items:center;justify-content:center;border-radius:7px;padding:0 7px;flex:none}
+h2 .tag{font-size:.68rem;font-weight:700;color:#fff;background:var(--gold);padding:3px 10px;border-radius:99px}
+.lede{color:var(--ink2);font-size:.92rem;margin:0 0 18px;max-width:900px}
+
+.card{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:19px 22px;box-shadow:var(--shadow);margin-bottom:14px}
+
+/* lesson cards */
+.ls{background:var(--card);border:1px solid var(--line);border-radius:13px;overflow:hidden;box-shadow:var(--shadow);margin-bottom:14px}
+.ls .hd{display:flex;align-items:center;gap:11px;padding:13px 20px;background:#f3efe7;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.ls .hd .no{background:var(--ink);color:var(--gold2);font-size:.7rem;font-weight:800;min-width:30px;height:26px;
+display:inline-flex;align-items:center;justify-content:center;border-radius:6px;padding:0 6px;flex:none}
+.ls .hd .ti{font-weight:800;font-size:1.02rem;flex:1;min-width:150px}
+.ls .hd .en{font-size:.72rem;color:var(--ink2);font-style:italic}
+.ls .hd .dur{font-size:.7rem;font-weight:700;color:#fff;background:var(--teal);padding:2px 9px;border-radius:99px}
+.ls .hd .dur.k{background:var(--gold)}
+.ls .hd .dur.v{background:var(--violet)}
+.ls .bd{padding:16px 20px}
+.ls .bd h4{font-size:.83rem;font-weight:800;color:var(--gold);text-transform:uppercase;letter-spacing:.05em;margin:0 0 7px}
+.ls .bd h4:not(:first-child){margin-top:15px}
+.ls .bd ul{margin:0;padding-left:19px;font-size:.89rem}
+.ls .bd li{margin-bottom:5px}
+.ls .bd p{font-size:.89rem;margin:0 0 8px}
+
+/* example box */
+.ex{background:#f4f9f8;border:1px solid #c5e0dc;border-left:4px solid var(--teal);border-radius:9px;padding:13px 16px;margin:12px 0}
+.ex .tagl{font-size:.68rem;font-weight:800;color:var(--teal);text-transform:uppercase;letter-spacing:.06em;display:block;margin-bottom:6px}
+.ex .bad{color:#8a3f47;background:#fdf1f2;border-left:3px solid var(--rose);border-radius:7px;padding:9px 12px;margin:8px 0;font-size:.86rem}
+.ex .good{color:#1c4f4b;background:#eaf5f3;border-left:3px solid var(--teal);border-radius:7px;padding:9px 12px;margin:8px 0;font-size:.86rem}
+.ex .bad b{color:var(--rose)} .ex .good b{color:var(--teal)}
+.ex .q{font-size:.8rem;color:var(--ink2);font-style:italic;margin:0 0 8px}
+
+/* drill */
+.drill{background:#fdfaf3;border:1px solid #e3d3ab;border-radius:9px;padding:13px 16px;margin-top:12px}
+.drill .tagl{font-size:.68rem;font-weight:800;color:#8a5a0b;text-transform:uppercase;letter-spacing:.06em;display:block;margin-bottom:6px}
+.drill ol{margin:0;padding-left:20px;font-size:.87rem}
+.drill li{margin-bottom:4px}
+.drill textarea{width:100%;min-height:76px;margin-top:9px;border:1px solid var(--line);border-radius:8px;
+padding:10px 12px;font-family:inherit;font-size:.87rem;line-height:1.6;background:#fff;color:var(--ink);resize:vertical}
+.drill textarea:focus{outline:2px solid var(--teal);outline-offset:1px;border-color:var(--teal)}
+
+/* structure */
+.frame{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:12px;margin:12px 0}
+.fr{border-radius:11px;padding:14px 16px;color:#fff}
+.fr h4{margin:0 0 6px;font-size:.92rem}
+.fr p{margin:0;font-size:.83rem;line-height:1.6}
+.fr .em{font-size:.8rem;font-style:italic;opacity:.92;margin-top:7px;display:block}
+
+/* table */
+.tw{overflow-x:auto;margin:12px 0}
+table{width:100%;border-collapse:collapse;font-size:.85rem;min-width:560px}
+th,td{padding:9px 13px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:#efe9de;font-weight:700;font-size:.77rem;color:var(--ink2);white-space:nowrap}
+tbody tr:last-child td{border-bottom:0}
+
+.src{counter-reset:s;list-style:none;padding:0;margin:0}
+.src li{counter-increment:s;position:relative;padding:9px 0 9px 34px;border-top:1px dashed var(--line);font-size:.83rem}
+.src li:first-child{border-top:0}
+.src li::before{content:counter(s);position:absolute;left:0;top:9px;width:22px;height:22px;background:var(--ink);
+color:var(--gold2);border-radius:6px;font-size:.71rem;font-weight:800;display:flex;align-items:center;justify-content:center}
+.src a{color:var(--teal);word-break:break-all;font-size:.74rem}
+.src .doc{font-weight:700;display:block}
+
+.chk{background:#eff7f5;border:1px solid #b6d9d3;border-radius:10px;padding:14px 17px;margin:12px 0}
+.chk h4{margin:0 0 8px;font-size:.9rem;color:var(--teal)}
+.chk ul{margin:0;padding-left:19px;font-size:.87rem}
+.chk li{margin-bottom:4px}
+
+footer{background:var(--ink);color:#b6c3cd;padding:26px 20px;text-align:center;font-size:.79rem;margin-top:48px}
+footer b{color:var(--gold2)}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>面試表達訓練手冊</h1>
+  <p class="sub">15 課重點 → 套落陳慶社區中心真實情境 → 逐題練習 → 自我評分表</p>
+  <div class="chips">
+    <span class="chip">目標 <b>社區綜合服務部 主任</b></span>
+    <span class="chip">情境 <b>大角咀・福全街45號</b></span>
+    <span class="chip">做法 <b>每課一個口語示範</b></span>
+    <span class="chip">重點 <b>可信 &gt; 技巧</b></span>
+  </div>
+</header>
+
+<nav><div class="in">
+  <a href="#how">① 點用</a>
+  <a href="#core">② 核心骨架</a>
+  <a href="#l1">③ 課1–5</a>
+  <a href="#l2">④ 課6–10</a>
+  <a href="#l3">⑤ 課11–15</a>
+  <a href="#full">⑥ 完整示範</a>
+  <a href="#drill">⑦ 練習</a>
+  <a href="#score">⑧ 評分表</a>
+  <a href="#src">⑨ 來源</a>
+</div></nav>
+
+<div class="wrap">
+
+<section id="how">
+  <h2><span class="n">1</span>點樣用呢本手冊</h2>
+  <p class="lede">廣告入面嗰 15 課唔係要你「學識晒」，而係要你揀<b>幾招最能救你</b>嗰幾條。面試真正贏人嘅只有三樣嘢：<b>答案有結構、例子係真嘅、講得出你做過咩</b>。</p>
+
+  <div class="card">
+    <h3 style="margin:0 0 12px;font-size:1rem">你嘅三個必練重點（練呢三條就夠應付 80% 面試）</h3>
+    <div class="tw">
+    <table>
+      <thead><tr><th>優先</th><th>課</th><th>點解要練</th><th>你嘅武器</th></tr></thead>
+      <tbody>
+        <tr><td><b>1</b></td><td>Lesson 5 Storytelling Secrets</td><td>主任級面試一定要有故事，冇故事就只剩「我認為」</td><td>督導主任嗰4年嘅真實案例</td></tr>
+        <tr><td><b>2</b></td><td>Lesson 8 Give Tough Feedback Fast<br>Lesson 9 Handle Difficult People</td><td>「你點處理做得唔好嘅同事」係必問題</td><td>管理過兩隊 PPI 社工 + 小組之家</td></tr>
+        <tr><td><b>3</b></td><td>Lesson 4 Speak Up in Any Room</td><td>主任要喺跨部門會議撳得到自己把聲</td><td>駐校時期同校長、家長、跨專業團隊傾過</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p style="font-size:.86rem;color:var(--ink2);margin:10px 0 0"><b>唔使練嘅：</b>Lesson 1（第一印象你控制唔到）、Lesson 6（身體語言面試冇咁重要）、Lesson 15（停頓技巧你已經識）。把時間省落 storytelling 同 conflict 兩條。</p>
+  </div>
+
+  <div class="card">
+    <h3 style="margin:0 0 10px;font-size:1rem">面試官真正嘅三個判斷（記住呢三條，唔好追技巧）</h3>
+    <ul style="margin:0;padding-left:19px;font-size:.9rem">
+      <li><b>可信</b>——你講嘅嘢係否同你份 Resume 一致？講錯數字就係扣分。</li>
+      <li><b>具體</b>——有冇具體到可以想像？有冇數字、有冇場景、有冇你做咗咩？</li>
+      <li><b>識界線</b>——你知唔知自己未做過咩？主任最怕吹得太盡，面試官追問兩句就知。</li>
+    </ul>
+  </div>
+</section>
+
+<section id="core">
+  <h2><span class="n">2</span>核心骨架：每題都用同一個結構</h2>
+  <p class="lede">唔使記 15 個唔同嘅招數。只要記住<b>一個骨架</b>，所有題目都套得入去——呢個就係 Lesson 5 同 Lesson 4 嘅底層原理。</p>
+
+  <div class="frame">
+    <div class="fr" style="background:var(--teal)">
+      <h4>① 結論先行</h4>
+      <p>第一句就俾答案，唔好由背景講起。面試官已經知你履歷。</p>
+      <span class="em">「我會先讀合約，再睇數據，最後先定方向。」</span>
+    </div>
+    <div class="fr" style="background:var(--gold)">
+      <h4>② 例子落地</h4>
+      <p>一個真實場景，有時間、有角色、有你做咗嘅動作。</p>
+      <span class="em">「當時…我發現…所以我…」</span>
+    </div>
+    <div class="fr" style="background:var(--rose)">
+      <h4>③ 方法提煉</h4>
+      <p>將例子變成可重用嘅做法，證明你唔係靠運氣。</p>
+      <span class="em">「所以我而家有一個原則：先睇數據…」</span>
+    </div>
+    <div class="fr" style="background:var(--violet)">
+      <h4>④ 反思界線</h4>
+      <p>一句講你學到咩，同埋你嘅限制。呢個最加分。</p>
+      <span class="em">「但呢個做法要視乎…」</span>
+    </div>
+  </div>
+
+  <div class="ex">
+    <span class="tagl">示範：題目「你會點樣規劃中心全年工作？」</span>
+    <div class="bad"><b>弱答（常見錯誤）：</b>「我會先同團隊開會，了解大家嘅想法，然後制定計劃，之後跟進⋯⋯」<br>→ 冇場景、冇數字、冇你嘅判斷，面試官會打瞌睡。</div>
+    <div class="good"><b>強答（骨架示範）：</b>「<b>我會先讀合約，再睇數據，最後先定方向。</b> 舉個我做督導主任嘅例子：學前教育嗰邊我一直用三份文件做annual plan——服務指引、指標表、季度檢討表，開會之前一定先對齊呢三份，唔會由老師哋嘅想法出發。<br><br>呢個做法好重要，因為活動開得多唔等於服務做得好。我做督導嗰陣試過開咗好多活動，但家長出席率好低——後來先發現問題唔係活動唔好，而係冇問過家長想要咩。<br><br>所以我到咗中心都會先做同一件事：睇清楚合約要求、睇實際數據同服務使用者結構，再定方向。呢個係我可以帶過去嘅做法，但我唔會扮我已經了解你哋中心嘅實際情況——呢個我要靠你哋同我講。」</div>
+  </div>
+
+  <div class="chk">
+    <h4>✓ 骨架自我檢查（答完任何一題，問自己 4 句）</h4>
+    <ul>
+      <li>第一句有冇直接答題？（唔好用「呢個問題好複雜」開頭）</li>
+      <li>有冇一個具體場景，而唔係「我通常會⋯⋯」？</li>
+      <li>有冇講出「所以我學到嘅原則」？</li>
+      <li>有冇誠實講出自己嘅限制？</li>
+    </ul>
+  </div>
+</section>
+
+<section id="l1">
+  <h2><span class="n">3</span>Lesson 1–5：建立可信同故事</h2>
+
+  <div class="ls">
+    <div class="hd"><span class="no">L1</span><span class="ti">第一印象</span><span class="en">First impression hacks</span><span class="dur">15分</span></div>
+    <div class="bd">
+      <h4>要學嘅重點</h4>
+      <ul>
+        <li><b>開場 20 秒定調</b>：唔好由「多謝畀機會我」開始，嗰個講法令人以為你冇準備。改為一句定位：「我係周翠瑜，註冊社工，做咗12年兒童及家庭服務，近年主要做督導主任。」</li>
+        <li><b>一句話記住你</b>：面試官面對幾個人，佢記唔住你嘅年表，只記得一句。揀一句有畫面嘅：「我做過學前教育駐校社工，由前線做到督導主任。」</li>
+        <li><b>態度和內容一齊贏</b>：進場前 30 秒決定咗佢對你嘅初始假設。企直、望實、答得慢半拍（唔好急住填充空白）。</li>
+      </ul>
+      <div class="ex">
+        <span class="tagl">口語示範</span>
+        <div class="bad"><b>弱：</b>「多謝畀機會我嚟面試。我好熱誠想做呢份工⋯⋯」</div>
+        <div class="good"><b>好：</b>「多謝畀機會。我叫周翠瑜，註冊社工，CUHK 社工學士加臨床碩士，做咗12年兒童及家庭服務。呢4年我由前線驻校社工做到督導主任，管理過兩隊學前教育社工同一個小組之家。我而家想轉去中心層面，因為督導主任嗰4年我做晒嗰啲主任要做嘅嘢——訂服務方向、寫指標、檢討質素。」</div>
+      </div>
+      <div class="drill">
+        <span class="tagl">練習</span>
+        <ol>
+          <li>寫低你嘅一句話定位（30秒內講完）。</li>
+          <li>寫低你嘅第一個故事嘅一句 hook（例如「有一年，學校有個班⋯⋯」）。</li>
+          <li>錄低自己講 3 遍，睇第二、三遍有冇分別。</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <div class="ls">
+    <div class="hd"><span class="no">L2</span><span class="ti">用聲音建立信任</span><span class="en">Build trust with your voice</span><span class="dur">11分</span></div>
+    <div class="bd">
+      <h4>要學嘅重點</h4>
+      <ul>
+        <li><b>慢、停、落實</b>：紧张嘅時候人會講快，講快就似背稿。刻意喺句號停一下。</li>
+        <li><b>用數字時放慢</b>：「41間」「175間」呢啲係你做功課嘅證明，放慢講會有份量。</li>
+        <li><b>語調要有落點</b>：陳述句尾唔好上揚（上揚＝唔肯定）。</li>
+      </ul>
+      <div class="ex">
+        <span class="tagl">口語示範（同一句，兩種講法）</span>
+        <div class="bad"><b>太快太輕：</b>「香港而家有41間地區中心同175間鄰舍中心啊。」<br>→ 變咗背景資料，面試官唔會記。</div>
+        <div class="good"><b>慢而有落點：</b>「我查過社署嘅名單。截至2026年11月9號，<b>41間</b>長者地區中心，<b>175間</b>長者鄰舍中心。呢個數字我記低咗，因為我想知道呢個位喺成個網絡入面嘅位置。」<br>→ 慢、放數字、然後即刻解釋「點解我要知」——面試官就知你做功課。</div>
+      </div>
+      <div class="drill">
+        <span class="tagl">練習</span>
+        <ol>
+          <li>揀 3 個你面試要引用嘅數字，練習喺每個數字後面停 1 秒。</li>
+          <li>錄低自己講同一段答案兩次：一次快，一次慢。揀慢嗰個。</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <div class="ls">
+    <div class="hd"><span class="no">L3</span><span class="ti">自信唔係大聲</span><span class="en">Confidence wins</span><span class="dur">10分</span></div>
+    <div class="bd">
+      <h4>要學嘅重點</h4>
+      <ul>
+        <li><b>自信 = 知道自己嘅界線</b>。唔係扮嘢，係清楚講「我做過咩、冇做過咩」。坦誠反而令人信。</li>
+        <li><b>唔好道歉式開頭</b>：「我可能唔係好有經驗⋯⋯」——刪走。</li>
+        <li><b>用「我做過」代替「我學過」</b>：你做過督導主任，就講「我做過」，唔好講「我讀過管理」。</li>
+      </ul>
+      <div class="ex">
+        <span class="tagl">口語示範（被問「你冇長者服務經驗」）</span>
+        <div class="bad"><b>弱（扮）：</b>「我都好有興趣接觸長者服務嘅，之前有睇過一啲長者中心嘅資料⋯⋯」（面試官一追問就爆）</div>
+        <div class="good"><b>好（誠實＋具體）：</b>「我冇喺長者中心做過，我要老實講。但我睇過社署嘅服務規定——例如長者地區中心每週最少開放6日48小時、必須由註冊社工監督營運，會員指標1,000，活躍輔導個案每月275。呢啲我記得。<b>我要補嘅係實務細節，我識做管理，管理嘅原理我帶得過去。</b>」</div>
+      </div>
+      <div class="drill">
+        <span class="tagl">練習</span>
+        <ol>
+          <li>寫低你 3 個「我冇做過但我識原理」嘅範疇。</li>
+          <li>每個寫一句誠實 + 具體嘅回應。</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <div class="ls">
+    <div class="hd"><span class="no">L4</span><span class="ti">喺任何場合發聲</span><span class="en">Speak up in any room</span><span class="dur k">10分</span></div>
+    <div class="bd">
+      <h4>要學嘅重點</h4>
+      <ul>
+        <li><b>先報數據，再提問</b>：主任唔係靠聲量，係靠帶住數據入去。「我留意到X，想問一問⋯⋯」</li>
+        <li><b>唔好第一個開口，但要第一個準備</b>：會議前預備一句你一定要講嘅嘢（寫低，開會前睇一次）。</li>
+        <li><b>接唔住就攞返個場</b>：「我諗⋯⋯先講我手上嘅資料」——攞返話語權再組織。</li>
+      </ul>
+      <div class="ex">
+        <span class="tagl">情境：跨部門會議，民政署話你哋個轉介機制「太多重疊」</span>
+        <div class="q">模擬面試官提問：「如果政府部門覺得你哋服務有重疊，你會點做？」</div>
+        <div class="bad"><b>弱：</b>「我哋會同佢哋溝通⋯⋯大家互相了解⋯⋯」</div>
+        <div class="good"><b>好：</b>「我會先確認『重疊』係指咩。如果係服務對象重疊，我反而會提議分工——社區中心做前線接入同轉介，專門服務單位做深度個案，咁大家夥伴關係先至真。如果係行政程序重複，我就會帶住實際運作嘅例子去傾。<br><br>我做督導主任嗰陣試過同一個家庭服務有三間機構各自轉介，結果個案走咗三轉。後來我哋做咗一個轉介流程表同聯絡點，問題就解決咗。<b>我唔會一開始就辯護，而會先搞清楚對方講緊咩。</b>」</div>
+      </div>
+      <div class="drill">
+        <span class="tagl">練習</span>
+        <ol>
+          <li>寫低 3 個你可能同政府部門／其他機構開會嘅情境，各寫一句「帶住數據入場」嘅開場。</li>
+          <li>其中一個要包含「先確認對方意思」呢個步驟。</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <div class="ls">
+    <div class="hd"><span class="no">L5</span><span class="ti">講故事嘅秘密</span><span class="en">Storytelling secrets</span><span class="dur k">13分</span></div>
+    <div class="bd">
+      <h4>要學嘅重點</h4>
+      <ul>
+        <li><b>故事結構：狀況 → 衝突 → 決定 → 結果</b>。冇「衝突」嘅故事唔會令人記住。</li>
+        <li><b>一個故事只講一個重點</b>。講完要講返「呢個例子想講嘅係⋯⋯」</li>
+        <li><b>結果要有數字或者具體改變</b>。「之後大家有信心啲」太虛。</li>
+        <li><b>用「我」唔好用「我哋」</b>——面試官要知邊個做咗咩。</li>
+      </ul>
+      <div class="ex">
+        <span class="tagl">口語示範：STAR 故事（有真實骨架，等你填內容）</span>
+        <div class="bad"><b>弱：「我帶領咗一個團隊」</b> → 冇場景、冇數字、冇衝突。面試官聽完已經忘記。</div>
+        <div class="good"><b>好（示範骨架，內容要用你嘅真實個案替換）：</b><br>
+          <b>S 狀況</b>：「做督導主任嗰陣，學前教育社工團隊嘅家長工作坊出席率好低，<b>由頭到尾都低</b>。老師同我一開始都覺得係宣傳唔夠。」<br>
+          <b>T 任務</b>：「我哋要搞清楚係咩原因，唔係再繼續加宣傳。」<br>
+          <b>A 行動</b>：「我同同事逐個打電話問家長唔嚟嘅原因，收返 <b>〔你嘅真實數字〕</b> 個回應。我哋發現大部分唔係唔 interested，而係<b>〔時間／交通／唔知有冇人幫手帶小朋友〕</b>。之後我改咗時段同安排⋯⋯」<br>
+          <b>R 結果</b>：「之後出席率<b>〔真實數字〕</b>。呢個例子教我嘅係：<b>『開多啲活動』唔等於『服務做得好』，要先問清楚阻礙係咩。</b>」</div>
+      </div>
+      <div class="chk">
+        <h4>✓ 你要準備嘅 3 個故事</h4>
+        <ul>
+          <li><b>主故事</b>（用足 2 分鐘）：督導主任期間，一個服務改變嘅故事 → 對應「服務發展」</li>
+          <li><b>後備 A</b>：一個同事做得唔好，你點處理 → 對應「督導」</li>
+          <li><b>後備 B</b>：一次投訴、意外或者危機處理 → 對應「風險及專業判斷」</li>
+        </ul>
+      </div>
+      <div class="drill">
+        <span class="tagl">練習</span>
+        <ol>
+          <li>用四格寫低你嘅主故事：狀況 / 任務 / 行動 / 結果（每格 2–3 句）。</li>
+          <li>入面<b>至少一個真實數字</b>。如果數字唔記得，改用「具體改變」，但唔好自己作數。</li>
+          <li>寫低最後嗰句「呢個例子教我⋯⋯」。</li>
+          <li>錄低講一次，計時：應該 90 秒到 2 分鐘。</li>
+        </ol>
+        <textarea placeholder="寫低你嘅主故事（S / T / A / R）⋯⋯"></textarea>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="l2">
+  <h2><span class="n">4</span>Lesson 6–10：身體語言、讀人、難搞嘅人</h2>
+
+  <div class="ls">
+    <div class="hd"><span class="no">L6</span><span class="ti">身體語言</span><span class="en">Body language</span><span class="dur">15分</span></div>
+    <div class="bd">
+      <h4>要學嘅重點</h4>
+      <ul>
+        <li><b>坐姿：身體微微向前</b>（唔係前傾，係微微），代表你喺度參與。</li>
+        <li><b>雙手放枱面或膝上</b>，唔好交叉手臂——交叉 = 封閉。主任級面試要開放感。</li>
+        <li><b>唔好玩手機／筆</b>，唔好扯衫角。雙手離開身體。</li>
+      </ul>
+      <div class="ex">
+        <span class="tagl">要點</span>
+        <div class="good"><b>一句要記：</b>「你嘅身體要話『我喺度聽』，唔係『我喺度等講嘢』。」<br>實用做法：面試官講完，你輕微點頭再開始答——呢個動作就係「我聽明白咗」。</div>
+      </div>
+      <div class="drill">
+        <span class="tagl">練習</span>
+        <ol>
+          <li>坐喺書枱前面對鏡，錄 60 秒。檢查：手臂有冇交叉、手有冇玩嘢、身體係咪後靠。</li>
+          <li>每次面試前，重覆 3 次「手放枱面、深呼吸、點頭」。</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <div class="ls">
+    <div class="hd"><span class="no">L7</span><span class="ti">識讀人</span><span class="en">Read people like a pro</span><span class="dur">15分</span></div>
+    <div class="bd">
+      <h4>要學嘅重點</h4>
+      <ul>
+        <li><b>面試官嘅三種反應</b>：追問 = 有興趣；換題 = 呢題答得唔夠；記筆記 = 想核實你講嘅嘢。<b>追問係好事</b>，唔好怕。</li>
+        <li><b>讀「唔同意」嘅訊號</b>：開始睇筆記、身體向後、追問「點解」——呢啲係「我要更多證據」，唔係「我反對你」。</li>
+        <li><b>唔好揣測</b>：你唔係讀心術。呢課真正嘅重點係<b>你唔好太快改變自己嘅說法去討好</b>。保持一致，先至可信。</li>
+      </ul>
+      <div class="ex">
+        <span class="tagl">情境：面試官追問「你真係有做過財務管理？」</span>
+        <div class="bad"><b>弱：</b>即刻改口：「其實我主要做咗督導⋯⋯」→ 令面試官覺得你頭先講大咗。</div>
+        <div class="good"><b>好：</b>「有做過。<b>具體講</b>：督導主任嗰陣我 sign 過工作計劃同資源調配，處理過同工更表同服務量未達標嗰陣嘅資源重新安排。<b>但我要老實講</b>，我自己做中心嘅完整財務報表同審計流程，係入職後要同總幹事同會計主任學嘅部分——我帶住做過嘅督導層面嘅資源判斷入去，唔會扮我識晒。」</div>
+      </div>
+      <div class="drill">
+        <span class="tagl">練習</span>
+        <ol>
+          <li>寫低你 Resume 上最容易被追問嗰 3 項，為每項準備一句「具體講」嘅補充。</li>
+          <li>每項都加一句誠實界線（「但⋯⋯我唔會扮⋯⋯」）。</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <div class="ls">
+    <div class="hd"><span class="no">L8</span><span class="ti">俾負面反饋</span><span class="en">Give tough feedback fast</span><span class="dur k">17分</span></div>
+    <div class="bd">
+      <h4>要學嘅重點</h4>
+      <ul>
+        <li><b>三步：講事實 → 講影響 → 講下一步</b>。唔好講「你態度有問題」呢類標籤。</li>
+        <li><b>對住行為，唔對住人</b>：「三次交咗報告都遲咗兩日」好過「你唔夠積極」。</li>
+        <li><b>即時但唔情緒化</b>：情緒高漲時唔好即刻講，講完可能後悔。</li>
+      </ul>
+      <div class="ex">
+        <span class="tagl">情境：「你會點處理一個工作質素唔夠嘅同工？」</span>
+        <div class="bad"><b>弱：</b>「我會同佢傾下，話清楚佢要改啲咩，必要時我會同上面反映⋯⋯」（冇畫面、冇專業判斷）</div>
+        <div class="good"><b>好：</b>「我會分三步，唔會跳過。<b>第一，睇事實唔聽標籤</b>——係工作流程唔清楚、係工作量分配唔均，定係真係專業判斷有問題？<b>第二，直接講</b>——用返個案同記錄講，唔用『你態度有問題』呢類說話。<b>第三，同佢訂清楚改善步驟同時間</b>，再跟進。<br><br>我做督導主任時管理過同事嘅表現問題，學到最有用嘅一句：<b>督導唔係叫人變好，係話清楚咩要改同點樣改。</b> 如果真係改善唔到、影響服務，我亦都識按程序做。」</div>
+      </div>
+      <div class="drill">
+        <span class="tagl">練習</span>
+        <ol>
+          <li>用你真實情況寫一個「做得唔好嘅同工」例子（記得隱去真名同細節）。</li>
+          <li>用三步寫答案：事實 / 影響 / 下一步。</li>
+          <li>最後加一句你學到嘅原則。</li>
+        </ol>
+        <textarea placeholder="寫低你嘅 difficult-person 例子⋯⋯"></textarea>
+      </div>
+    </div>
+  </div>
+
+  <div class="ls">
+    <div class="hd"><span class="no">L9</span><span class="ti">應付難搞嘅人</span><span class="en">Handle difficult people smartly</span><span class="dur k">15分</span></div>
+    <div class="bd">
+      <h4>要學嘅重點</h4>
+      <ul>
+        <li><b>難搞通常唔係「壞人」，而係未滿足</b>：未被聽、被質疑、被逼住、時間唔夠。先搵出係邊一種。</li>
+        <li><b>三種難搞人</b>：<b>情緒型</b>（要先安撫）、<b>權力型</b>（要俾尊重同選擇）、<b>拖延型</b>（要拆細、要死線）。</li>
+        <li><b>分清邊個可以影響</b>：服務使用者要接住，同事要問清楚，投訴者要按程序。唔係所有「難搞」都要你捱。</li>
+      </ul>
+      <div class="ex">
+        <span class="tagl">情境：一位家長投訴中心，語氣激動，話「你哋根本唔理我哋」</span>
+        <div class="bad"><b>弱：</b>「我會耐性聆聽，講解中心規則，安撫佢情緒⋯⋯」（冇處理「佢投訴嘅係咩」呢個核心）</div>
+        <div class="good"><b>好：</b>「我會分三步。<b>第一，聽完先回應</b>——唔會喺佢講到一半時插嘴解釋，因為嗰個會令人覺得自己冇被聽。<b>第二，分清係投訴定係求助</b>——如果係求助，我即刻轉介或者安排個案跟進；如果係對服務嘅投訴，就按中心投訴機制處理，並且回覆時限。<b>第三，服務使用者嘅尊嚴同私隱要守住</b>——唔可以喺中心大堂公開處理。<br><br>我做兒童家庭服務嗰陣處理過不少類似嘅投訴，學到最重要嘅係：<b>好多投訴實際上係『我唔知點樣求助』變成『你哋唔理我』。</b>」</div>
+      </div>
+      <div class="drill">
+        <span class="tagl">練習</span>
+        <ol>
+          <li>寫低 2 個你真實遇過嘅「難搞」情況（一個係情緒型、一個係權力型）。</li>
+          <li>每個標示你判斷咗係邊一種，以及第一步做咩。</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <div class="ls">
+    <div class="hd"><span class="no">L10</span><span class="ti">講「不」而唔傷感情</span><span class="en">Say no and be likable</span><span class="dur">10分</span></div>
+    <div class="bd">
+      <h4>要學嘅重點</h4>
+      <ul>
+        <li><b>唔好即刻答「好」</b>，亦唔好即刻答「唔得」。先問一句：「你係想我做A，定想我做B？」</li>
+        <li><b>用「條件」代替「拒絕」</b>：「我可以做A；如果做B，就要⋯⋯」——保住關係同時守住底線。</li>
+        <li><b>主任最常講嘅「不」</b>：資源唔夠、唔喺服務範圍、唔符合資格。呢三種要識講。</li>
+      </ul>
+      <div class="ex">
+        <span class="tagl">情境：有人要求開一個新項目，但資源唔夠</span>
+        <div class="bad"><b>弱：</b>「而家人手唔夠，咁我哋做唔到。」（講完就冇下文）</div>
+        <div class="good"><b>好：</b>「我唔會一口答應，亦唔會一口拒絕。我會用三個問題去排：<b>呢個項目服務緊邊個對象</b>？係咪已經覆蓋緊而家嘅會員需要？<b>如果唔做，後果係咩</b>——會員少咗啲咩支援？<b>做完之後點樣知有冇用</b>？<br><br>做督導主任嗰陣我成日做呢個判斷——你唔可能每樣都要，所以要識講清楚<b>點解唔做</b>，同時畀一條替代路：如果做唔到A，我可以先做B，之後按數據再檢討。」</div>
+      </div>
+      <div class="drill">
+        <span class="tagl">練習</span>
+        <ol>
+          <li>寫低你會講嘅 3 個「不」，每個用「條件式」嘅講法。</li>
+          <li>每個都要有一條替代路。</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="l3">
+  <h2><span class="n">5</span>Lesson 11–15：打斷、衝突、聽、傾偈、停頓</h2>
+
+  <div class="ls">
+    <div class="hd"><span class="no">L11</span><span class="ti">圓融咁打斷</span><span class="en">Interrupt smoothly</span><span class="dur">10分</span></div>
+    <div class="bd">
+      <h4>要學嘅重點</h4>
+      <ul>
+        <li><b>唔好硬插</b>。用「承接式打斷」：先搭一句對方，再轉。</li>
+        <li><b>三句式承接</b>：「你講緊⋯⋯呢點好重要。我想補一個角度⋯⋯」</li>
+        <li><b>如果真係要打斷</b>：用「不好意思，想確認一個細節⋯⋯」——用問題做入口，永遠唔好直接停人。</li>
+      </ul>
+      <div class="ex">
+        <span class="tagl">口語示範</span>
+        <div class="bad"><b>弱：</b>「不好意思⋯⋯（停頓）我想講⋯⋯」→ 冇承接，顯得冇禮貌又冇內容。</div>
+        <div class="good"><b>好：</b>「你提到轉介機制，<b>嗰個正正係我想講嘅重點</b>。我想補一個情況⋯⋯」<br>或者：「我想確認一個細節——你提到嘅『綜合服務』，係咪包括轉介到其他單位？」→ 用問題入場，自然又專業。</div>
+      </div>
+      <div class="drill">
+        <span class="tagl">練習</span>
+        <ol>
+          <li>練習 5 次「承接式打斷」，每次用不同嘅承接句。</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <div class="ls">
+    <div class="hd"><span class="no">L12</span><span class="ti">化解任何衝突</span><span class="en">Defuse any conflict</span><span class="dur">13分</span></div>
+    <div class="bd">
+      <h4>要學嘅重點</h4>
+      <ul>
+        <li><b>衝突三步：降溫 → 抽離 → 重建</b>。降溫唔係認輸，係將對話由情緒層拉返去問題層。</li>
+        <li><b>「我」開句，「你」收句</b>：「我見到⋯⋯」而唔係「你一直⋯⋯」。</li>
+        <li><b>衝突後要修復</b>：主任唔止要熄火，要令關係可以繼續工作。</li>
+      </ul>
+      <div class="ex">
+        <span class="tagl">情境：兩隊社工因為個案分工鬧交</span>
+        <div class="bad"><b>弱：</b>「我會開個會，大家傾清楚⋯⋯」（衝突唔係靠開會解決，係靠方法）</div>
+        <div class="good"><b>好：</b>「我唔會即刻開會，因為人仲嬲緊，開會只會互相指住。<b>我會先分開同兩邊傾</b>——分別問：對方期望對方做咩？同埋有咩嘢係你哋已經做咗但對方唔知？好多衝突係<b>資訊落差</b>，唔係立場衝突。<br><br>傾完之後我會做一件事：<b>把分工寫低</b>——邊個跟、邊個覆、幾時檢討。衝突之後冇文件，兩個月就會爆返同一樣。<br><br>我做督導主任管理過幾隊，學到最有用嘅一句：<b>衝突通常唔係情緒問題，係期望冇講清楚。</b>」</div>
+      </div>
+      <div class="drill">
+        <span class="tagl">練習</span>
+        <ol>
+          <li>寫低 1 個你真實遇過嘅團隊衝突，用「降溫 → 抽離 → 重建」寫答案。</li>
+          <li>記得加「之後點樣防止再發生」（通常係寫低分工）。</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <div class="ls">
+    <div class="hd"><span class="no">L13</span><span class="ti">做領袖咁聽</span><span class="en">Listen like a leader</span><span class="dur k">11分</span></div>
+    <div class="bd">
+      <h4>要學嘅重點</h4>
+      <ul>
+        <li><b>聽嘅目的唔係回應，係搵出對方未講出口嘅嘢</b>。</li>
+        <li><b>三種聽法</b>：<b>接住</b>（重述事實）、<b>感受</b>（講出對方情緒）、<b>意圖</b>（問對方真正想要咩）。主任要用晒三種。</li>
+        <li><b>沉默係工具</b>：講完唔好即刻接落去，等 2 秒。</li>
+      </ul>
+      <div class="ex">
+        <span class="tagl">情境：同工講「我做唔晒」，跟住停咗</span>
+        <div class="bad"><b>弱：</b>「咁你做少啲啦。」（立刻落方案，錯過咗真正嘅資訊）</div>
+        <div class="good"><b>好：</b>「我聽到你有啲頂唔住。（接住）<br>係咪因為同時接咗太多個案？定係有啲你唔知點處理？（意圖）<br>⋯⋯（等 2 秒）<br>如果你講出嚟嘅係我唔知嘅嘢，我想知。<b>同你講份工做唔晒，唔係你唔夠努力——我需要知道係邊個位唔match。</b>」</div>
+      </div>
+      <div class="drill">
+        <span class="tagl">練習</span>
+        <ol>
+          <li>同一位同事／家人傾偈時，刻意用「接住 → 感受 → 意圖」三步，睇下對方有冇講多咗嘢。</li>
+          <li>面試時揀一題練習「先接住情緒，再問事實」。</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <div class="ls">
+    <div class="no"></div>
+    <div class="hd"><span class="no">L14</span><span class="ti">傾偈嘅魔法</span><span class="en">Small talk magic</span><span class="dur">12分</span></div>
+    <div class="bd">
+      <h4>要學嘅重點</h4>
+      <ul>
+        <li><b>傾偈唔係填靜態</b>，而係搵共同點同交換資訊。<b>問「你」唔好過問「有冇」。</b></li>
+        <li><b>用觀察代替盤問</b>：「你見到今日外面咁多人⋯⋯」比「你今日做咩呀？」自然。</li>
+        <li><b>面試室嘅傾偈</b>：等候時一句「我見到你哋中心嘅年報⋯⋯」就已經贏咗半場——你做咗功課。</li>
+      </ul>
+      <div class="ex">
+        <span class="tagl">口語示範</span>
+        <div class="bad"><b>弱：</b>「你哋中心做咗幾耐？」（資訊性盤問，像做研究）</div>
+        <div class="good"><b>好：</b>「我睇年報見到你哋『社區清潔員工支援服務』接觸緊200幾個工友——我以前做兒童家庭服務嗰陣，見過好多基層家庭嘅壓力就係咁嚟。呢個服務做得好實際。」<br>→ 用你做過功課嘅嘢做開場，同時展示你嘅服務觀。<b>呢個就係「令人想請你」嘅瞬間。</b></div>
+      </div>
+      <div class="drill">
+        <span class="tagl">練習</span>
+        <ol>
+          <li>寫低 3 句你可以用喺等候／開場嘅「觀察式」問句，每句都要引用一個你查過嘅中心資料。</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <div class="ls">
+    <div class="hd"><span class="no">L15</span><span class="ti">完美停頓嘅力量</span><span class="en">The power of a perfect pause</span><span class="dur">12分</span></div>
+    <div class="bd">
+      <h4>要學嘅重點</h4>
+      <ul>
+        <li><b>停頓 = 攞返控制權</b>。講得太急會講錯；停一停先答，答案準確好多。</li>
+        <li><b>面試官停頓唔係尷尬</b>——佢可能喺度寫嘢。<b>你唔需要填滿空白。</b></li>
+        <li><b>追問前停一下</b>：被問「點解」之後，唔好即刻接住答，先停 1 秒，面試官會覺得你諗清楚咗。</li>
+      </ul>
+      <div class="ex">
+        <span class="tagl">口語示範</span>
+        <div class="bad"><b>弱：</b>「⋯⋯因為⋯⋯因為⋯⋯（即場填字）」</div>
+        <div class="good"><b>好：</b>「⋯⋯（停 2 秒）我諗你問嘅係服務量嗰方面。〔如果唔係，你可以追問我〕」</div>
+      </div>
+      <div class="drill">
+        <span class="tagl">練習</span>
+        <ol>
+          <li>練習「停 2 秒再答」：請朋友連續問你 5 條「點解」，每次答之前停一下。</li>
+          <li>目標：<b>自然停頓，唔係尷尬停頓。</b></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="full">
+  <h2><span class="n">6</span>完整示範：三個必答題用骨架示範</h2>
+  <p class="lede">以下係用你嘅真實背景寫嘅完整示範答案。〈〉入面係要你自己填嘅位——填完呢份就係你嘅面試稿。</p>
+
+  <div class="card">
+    <h3 style="margin:0 0 10px;font-size:1rem">① 「你做咗咁多年兒童家庭，而家點解想做社區中心？」</h3>
+    <div class="ex" style="margin-top:0">
+      <span class="tagl">完整示範</span>
+      <div class="good"><b>「我想做嘅唔係轉跑道，係擴闊我做緊嗰件事。</b><br><br>督導主任嗰四年我做晒四樣嘢：訂服務方向、寫指引同指標、督導團隊、檢討服務質素。呢四樣正正就係中心主任嘅工作內容——我唔係想學做主任，我做過嗰部分。<br><br>社區中心同學前教育唔同，服務對象唔同，但我做管理嗰部分係同一套。而且我睇過你哋嘅服務——家庭支援網絡隊一年外展新接觸 1,328 個家庭、成功轉介 1,188 個，服務範圍圍繞住海輝道、界限街、彌敦道、亞皆老街同櫻桃街一帶。呢個唔係一個做活動為主嘅中心，係一個<b>做接入點</b>嘅地方。<br><br>我自己有單親家庭支援、綜緩家庭支援、親子教育、兒童課餘託管嗰啲工作嘅底子。你哋中心嘅家庭服務，<b>其實同我做過嘅嘢係直接對得上</b>——我唔係完全外來。<br><br>我要補嘅係社區中心嘅實務細節，我唔會扮我識。」</div>
+    </div>
+    <p style="font-size:.83rem;color:var(--ink2)"><b>拆解：</b>① 結論先行（「唔係轉跑道，係擴闊」）→ ② 四樣具體嘢 → ③ 引用中心真實數字證明做功課 → ④ 誠實指出你其實對口 → ⑤ 承認限制。<b>呢段完全冇提「熱誠」或「貢獻社區」。</b></p>
+  </div>
+
+  <div class="card">
+    <h3 style="margin:0 0 10px;font-size:1rem">② 「你頭三個月會點樣做？」</h3>
+    <div class="ex" style="margin-top:0">
+      <span class="tagl">完整示範</span>
+      <div class="good"><b>「我會分三步，而且呢個順序好重要。</b><br><br><b>第一，讀清楚合約同現況</b>——你哋社區綜合服務部有四隊，加埋家庭支援網絡隊同進修課程組，每隊有自己嘅服務量指標。我會先攞齊呢啲指標同實際數據，睇差距喺邊度，唔會一開始就開新活動。<br><br><b>第二，見人</b>——我會逐隊傾，聽前線講邊啲位最難、邊啲轉介唔通。因為家庭支援網絡隊嘅成效（89.61% 增加咗社區及福利認知、87.95% 改善咗社區網絡）睇落好，但呢啲數字背後係點樣做成，我要去現場睇。<br><br><b>第三，先定方向</b>——用數據同前線輸入，揀一到兩個最值得做嘅重點，寫低指標同檢討時間。<br><br>我做督導主任嗰陣最痛嘅一課就係：<b>活動開得多唔等於服務做得好。</b> 我唔會重複嗰個錯誤。但我唔會扮我已經知道你哋嘅實際情況——頭三個月就係去學識佢。」</div>
+    </div>
+    <p style="font-size:.83rem;color:var(--ink2)"><b>拆解：</b>你引用咗真實架構（4隊 + 家庭支援網絡隊 + 進修課程組）同真實指標（89.61%／87.95%）——呢個就係「令人想請你」嘅證明。但最後一句守住界線，唔會俾人覺你吹噠。</p>
+  </div>
+
+  <div class="card">
+    <h3 style="margin:0 0 10px;font-size:1rem">③ 「你嘅弱點係咩？」</h3>
+    <div class="ex" style="margin-top:0">
+      <span class="tagl">完整示範</span>
+      <div class="good"><b>「我冇做過社區中心，呢個係實話，唔係包裝。</b><br><br>我嘅處理方法係：我用咗幾個星期讀晒社署嘅社區中心服務規定、油尖旺區嘅服務單位分佈，同埋你哋嘅年報——包括社區綜合服務部嘅架構同家庭支援網絡隊嘅服務數據。<b>見到中心之前，我已經知道中心做乜、對住邊個、有咩指標。</b><br><br>但我唔會講我已經識做社區中心——我識做管理，管理嘅原理我帶得過去。而且我自己覺得，<b>我最需要學嘅係「大角咀」呢個地區本身</b>：油麻地同大角咀嘅舊區特性、劏房住戶嘅需要、跨區服務嘅差異，呢啲要靠落嚟同團隊一齊傾，睇書睇唔到。</div>
+    </div>
+    <p style="font-size:.83rem;color:var(--ink2)"><b>拆解：</b>真實弱點 → 具體行動（讀過咩、幾耐）→ 承認邊部分要靠人教。<b>「睇書睇唔到」呢句好過「我適應力強」。</b></p>
+  </div>
+</section>
+
+<section id="drill">
+  <h2><span class="n">7</span>練習：六條題，寫完就錄</h2>
+  <p class="lede">每題用同一個骨架寫，寫完錄一次。目標唔係講得完美，而係<b>每題有一個具體場景同一個真實數字</b>。</p>
+
+  <div class="card">
+    <h3 style="margin:0 0 10px;font-size:1rem">練習題（對應真實面試題）</h3>
+    <ol style="padding-left:20px;font-size:.89rem">
+      <li><b>「你做過咩令你覺得最有成就感？」</b> → 主故事（S/T/A/R）</li>
+      <li><b>「你會點處理一個做得唔好嘅同工？」</b> → 事實 / 影響 / 下一步</li>
+      <li><b>「中心資源唔夠，有人要求開新項目，你點做？」</b> → 對象 / 後果 / 成效</li>
+      <li><b>「你點樣發展社區網絡？」</b> → 已有關係 / 切入點 / 轉介同義工</li>
+      <li><b>「如果社署或政府部門質疑你哋服務，你會點做？」</b> → 先確認意思 / 帶數據 / 提出分工</li>
+      <li><b>「點解我哋應該請你？」</b> → 三個理由，每個配一個證據</li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <h3 style="margin:0 0 10px;font-size:1rem">「點解我哋應該請你？」— 示範結構</h3>
+    <div class="ex" style="margin-top:0">
+      <div class="good"><b>三個理由，每個一句 + 一個證據：</b><br><br><b>① 我已經做過主任要做嘅嗰一半。</b>督導主任四年：訂服務方向、寫指引、督導兩隊社工同小組之家、檢討服務質素。呢四樣就係你哋中心主任嘅日常。<br><br><b>② 你哋嘅服務同我嘅底子直接對得上。</b>你哋有單親家庭支援、綜緩家庭支援、親子教育、兒童課餘託管、家庭支援網絡——呢啲正正就係我做咗12年嘅嘢。我唔係要由零學一個新服務，我係要將專業轉到社區層面。<br><br><b>③ 我已經做咗功課，仲做咗準備。</b>我讀過社署社區中心嘅服務規定、知道油尖旺區得1間社區中心（就係你哋）、睇過你哋年報入面社區綜合服務部嘅架構同服務數據。我面試嗰日唔係嚟聽你哋介紹自己——我已經知道你哋做乜。<br><br><b>我唔會講我熟悉社區中心，我會講：呢個位嘅管理部分我做過，社區部分我已經開始學。</b></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3 style="margin:0 0 12px;font-size:1rem">自我評分表（每題 0–2 分，12 分以上就可以去面試）</h3>
+    <div class="tw">
+    <table>
+      <thead><tr><th>檢查項目</th><th>0 分</th><th>1 分</th><th>2 分</th></tr></thead>
+      <tbody>
+        <tr><td>第一句有冇直接答題</td><td>由背景講起</td><td>有結論但拖咗先</td><td>一開口就答題</td></tr>
+        <tr><td>有冇具體場景</td><td>淨係講「我通常會」</td><td>有一個場景但模糊</td><td>有時間、角色、你做咗咩</td></tr>
+        <tr><td>有冇真實數字</td><td>冇</td><td>有一個</td><td>有兩個或以上</td></tr>
+        <tr><td>有冇引用中心資料</td><td>冇</td><td>提到中心但冇細節</td><td>引用咗年報數字或架構</td></tr>
+        <tr><td>有冇講出學到嘅原則</td><td>冇</td><td>隱約有</td><td>明確講出一句可重用嘅原則</td></tr>
+        <tr><td>有冇守住誠實界線</td><td>吹大咗或完全冇提</td><td>含糊</td><td>明確承認一項限制</td></tr>
+        <tr><td>時間控制</td><td>超時／太短</td><td>±30秒</td><td>90秒–2分鐘</td></tr>
+        <tr><td>語速同停頓</td><td>太快或填滿空白</td><td>偶爾停頓</td><td>自然停頓，落數字時放慢</td></tr>
+        <tr><td>有冇用「我」</td><td>淨係「我哋」</td><td>混合</td><td>清楚分辨你做咗咩</td></tr>
+        <tr><td>有冇空泛形容詞</td><td>「熱誠」「盡責」</td><td>一兩個</td><td>完全冇</td></tr>
+        <tr><td>結尾有冇界線句</td><td>冇</td><td>冇但答得穩</td><td>有一句誠實嘅界線</td></tr>
+        <tr><td>整體有冇記得 3 個重點</td><td>零</td><td>一兩個</td><td>三個都有</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+</section>
+
+<section id="src">
+  <h2><span class="n">8</span>資料來源</h2>
+  <ol class="src">
+    <li><span class="doc">社區綜合服務部架構、職員名錄（至2026年3月31日）及服務數據</span><a href="https://www.mkchanhing.org.hk/annualreport/annualreport_25-26.pdf" target="_blank" rel="noopener">旺角街坊會陳慶社會服務中心《2025至2026年報》</a></li>
+    <li><span class="doc">家庭支援網絡隊：新接觸家庭1,328／成功轉介1,188／新增義工206／增加社區及福利認知89.61%／改善社區網絡87.95%</span><a href="https://www.mkchanhing.org.hk/ser_2.2j.htm" target="_blank" rel="noopener">陳慶中心 家庭支援網絡服務</a></li>
+    <li><span class="doc">家庭服務（新來港人士、樓宇維修、非華裔、家庭、學託、公民教育、就業支援、婦女服務）</span><a href="https://www.mkchanhing.org.hk/service2.htm" target="_blank" rel="noopener">陳慶中心 社區綜合服務</a></li>
+    <li><span class="doc">油尖旺區社區中心名單（區內只得1間）</span><a href="https://www.swd.gov.hk/tc/pubsvc/district/kcytm/infobook1/" target="_blank" rel="noopener">社署 九龍城及油尖旺區 本區服務概覽</a></li>
+    <li><span class="doc">社署資助13間社區中心名單（截至2025-08-08）</span><a href="https://www.swd.gov.hk/storage/asset/section/1242/tc/CC_20250808_c.pdf" target="_blank" rel="noopener">社署《NGOs Community Centre 社區中心》</a></li>
+    <li><span class="doc">社區中心服務定義、基本服務規定、服務量及服務成效標準</span><a href="https://www.swd.gov.hk/storage/asset/section/1231/tc/Sample_FSA_Multi-programme_Integrated_Service_Type%201.pdf" target="_blank" rel="noopener">社署《Sample FSA on Multi-programme Integrated Service (Type 1)》</a></li>
+    <li><span class="doc">中心簡介、開放時間、理念（社署資助 + 會方籌募）</span><a href="https://www.mkchanhing.org.hk/intro.htm" target="_blank" rel="noopener">陳慶中心 機構簡介</a></li>
+  </ol>
+  <p style="font-size:.82rem;color:var(--ink2);margin-top:14px"><b>說明：</b>廣告入面 15 課嘅標題同時長來自你提供嘅短片。呢本手冊嘅重點、示範同練習係按陳慶社區綜合服務部嘅真實架構同服務數據重新編寫，唔係通用模板。示範答案內〈〉位置要你自己填真實內容——<b>唔好填自己唔記得或冇發生過嘅數字。</b></p>
+</section>
+
+</div>
+
+<footer>
+  情境與數字引自陳慶社會服務中心 2025至2026年報及社署公開文件｜查核 <b>2026年11月10日</b><br>
+  <span style="opacity:.65">年報內容為機構自行公布，FSA 樣本只供參考，實際條款以社署發出的要約及通知書為準。</span>
+</footer>
+
+</body>
+</html>
